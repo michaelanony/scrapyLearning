@@ -8,7 +8,8 @@
 import scrapy
 
 
-class ScrapyLearningItem(scrapy.Item):
+class CrawlBeautyItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    name = scrapy.Field()
+    ImgUrl = scrapy.Field()
     pass
