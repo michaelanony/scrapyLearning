@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for crawl_beauty project
+# Scrapy settings for scrapyLearning project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,14 +9,14 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'crawl_beauty'
+BOT_NAME = 'scrapyLearning'
 
-SPIDER_MODULES = ['crawl_beauty.spiders']
-NEWSPIDER_MODULE = 'crawl_beauty.spiders'
+SPIDER_MODULES = ['scrapyLearning.spiders']
+NEWSPIDER_MODULE = 'scrapyLearning.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'crawl_beauty (+http://www.yourdomain.com)'
+#USER_AGENT = 'scrapyLearning (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = True
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'crawl_beauty.middlewares.CrawlBeautySpiderMiddleware': 543,
+#    'scrapyLearning.middlewares.ScrapylearningSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'crawl_beauty.middlewares.CrawlBeautyDownloaderMiddleware': 543,
+#    'scrapyLearning.middlewares.ScrapylearningDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -65,7 +65,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 #ITEM_PIPELINES = {
-#    'crawl_beauty.pipelines.CrawlBeautyPipeline': 300,
+#    'scrapyLearning.pipelines.ScrapylearningPipeline': 300,
 #}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
