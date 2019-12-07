@@ -10,5 +10,6 @@ import scrapy
 
 class ScrapylearningItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
+    tag = scrapy.Field()
+    imgUrl = scrapy.Field()
     pass
