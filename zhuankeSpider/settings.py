@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Scrapy settings for scrapyLearning project
+# Scrapy settings for zhuankeSpider project
 #
 # For simplicity, this file contains only settings considered important or
 # commonly used. You can find more settings consulting the documentation:
@@ -9,20 +9,20 @@
 #     https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 
-BOT_NAME = 'scrapyLearning'
+BOT_NAME = 'zhuankeSpider'
 
-SPIDER_MODULES = ['scrapyLearning.spiders']
-NEWSPIDER_MODULE = 'scrapyLearning.spiders'
+SPIDER_MODULES = ['zhuankeSpider.spiders']
+NEWSPIDER_MODULE = 'zhuankeSpider.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-#USER_AGENT = 'scrapyLearning (+http://www.yourdomain.com)'
+# USER_AGENT = 'zhuankeSpider (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = True
+ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
-#CONCURRENT_REQUESTS = 32
+CONCURRENT_REQUESTS = 32
 
 # Configure a delay for requests for the same website (default: 0)
 # See https://docs.scrapy.org/en/latest/topics/settings.html#download-delay
@@ -33,8 +33,8 @@ ROBOTSTXT_OBEY = True
 #CONCURRENT_REQUESTS_PER_IP = 16
 
 # Disable cookies (enabled by default)
-#COOKIES_ENABLED = False
-
+COOKIES_ENABLED = False
+FEED_EXPORT_ENCODING = 'utf-8'
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
@@ -47,13 +47,13 @@ ROBOTSTXT_OBEY = True
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 #SPIDER_MIDDLEWARES = {
-#    'scrapyLearning.middlewares.ScrapylearningSpiderMiddleware': 543,
+#    'zhuankeSpider.middlewares.ZhuankespiderSpiderMiddleware': 543,
 #}
 
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 #DOWNLOADER_MIDDLEWARES = {
-#    'scrapyLearning.middlewares.ScrapylearningDownloaderMiddleware': 543,
+#    'zhuankeSpider.middlewares.ZhuankespiderDownloaderMiddleware': 543,
 #}
 
 # Enable or disable extensions
@@ -64,9 +64,10 @@ ROBOTSTXT_OBEY = True
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    'scrapyLearning.pipelines.ScrapylearningPipeline': 300,
-#}
+# 300是优先级，表示先经过哪一个
+ITEM_PIPELINES = {
+   'zhuankeSpider.pipelines.ZhuankespiderPipeline': 300,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html

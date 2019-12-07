@@ -1,4 +1,8 @@
 .idea
+<<<<<<< HEAD
 DS_Store
 __pycache__
 config.json
+=======
+__pycache__
+>>>>>>> 4625f13ab86fd877aebeb4f9bda3cc7fdca8d638

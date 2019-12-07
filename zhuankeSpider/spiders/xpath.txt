@@ -1,0 +1,3 @@
+时间：//div[@id='redtag']/a/span
+文本：//div[@id='redtag']/a/text()
+link: //div[@id='redtag']/a/@href
